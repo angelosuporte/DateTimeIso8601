@@ -26,7 +26,7 @@ namespace Pratica
             Console.WriteLine("date1: " + date1);
             Console.WriteLine("date1 Kind: " + date1.Kind);
             Console.WriteLine("date1 to Local: " + date1.ToLocalTime());
-            Console.WriteLine("ddate1 to Utc: " + date1.ToUniversalTime());
+            Console.WriteLine("date1 to Utc: " + date1.ToUniversalTime());
             Console.WriteLine();
             Console.WriteLine("------------------------------------------------------");
             Console.WriteLine("date2: " + date2);
@@ -35,7 +35,7 @@ namespace Pratica
             Console.WriteLine("date2 to Utc: " + date2.ToUniversalTime());
             Console.WriteLine();
             Console.WriteLine("------------------------------------------------------");
-            Console.WriteLine(date2.ToString("yyyy-MM-ddTHH:mm:ssZ")); //<--não irá converter, porque é necessário passar oToUniversalTime
+            
             Console.WriteLine(date2.ToUniversalTime().ToString("yyyy-MM-ddTHH:mm:ssZ"));
         }
     }
